@@ -1,0 +1,33 @@
+.titulo-xl,
+.titulo-xl--b{
+    font: 400 3rem/ 4rem var(--main-font), sans-serif;
+    margin-bottom: 1rem;
+}
+
+.titulo-xl--b{
+    font-weight: 700;
+    position: relative;
+}
+
+/*-----------*/
+
+.titulo-sm{
+    font: 400 1.125rem/ 1.5rem var(--main-font), sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.titulo--decorador::after{
+    background: var(--primary-500);
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: -16px;
+    width: 64px;
+}
+
+.texto-section{
+    margin-bottom: 1.5rem;
+}
+

@@ -1,0 +1,15 @@
+#vit--1 .container header,
+#vit--1 .container .texto-section{
+  margin: 0 auto;
+  max-width: 512px;
+  text-align: center;
+}
+
+#vit--1 .container .texto-section{
+  margin-bottom: 40px;
+}
+
+#vit--1 .titulo--decorador::after{
+  left: 50%;
+  transform: translate(-50%);
+}

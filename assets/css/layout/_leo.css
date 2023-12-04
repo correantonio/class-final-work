@@ -1,0 +1,29 @@
+#leo--1 .bg-100{
+  border-bottom-right-radius: 32px;
+}
+
+#leo--1 .bg-200{
+  border-top-left-radius: 32px;
+}
+
+@media screen and (min-width: 1080px) {
+  #leo--1 .bg-100{
+    box-shadow: 200px 32px 0 var(--gray-200);
+  }
+}
+
+#leo--2 .container header,
+#leo--2 .container .texto-section{
+  margin: 0 auto;
+  max-width: 512px;
+  text-align: center;
+}
+
+#leo--2 .container .texto-section{
+  margin-bottom: 40px;
+}
+
+#leo--2 .titulo--decorador::after{
+  left: 50%;
+  transform: translate(-50%);
+}

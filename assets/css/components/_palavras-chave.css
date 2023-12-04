@@ -1,0 +1,14 @@
+.palavras-chave{
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.palavra-chave{
+  gap: .5rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .palavras-chave{
+      margin-bottom: 0;
+  }
+}

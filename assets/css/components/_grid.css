@@ -1,0 +1,31 @@
+/*======  GRID EDITS =======*/
+
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+
+.absolute {
+  inset: 0;
+  position: absolute;
+}
+
+.absolute--bg{
+  z-index: -3;
+}
+
+
+
+
+@media screen and (min-width: 1080px) {
+  .grid--2col{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  article > .grid{
+    gap: 5rem;
+  }
+  .grid.absolute{
+    gap: 0;
+  }
+  
+}

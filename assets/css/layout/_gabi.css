@@ -1,0 +1,67 @@
+#gabi--1{
+  background: linear-gradient(180deg, #EAE5FF 0%, #F7F5FF 100%);
+  position: relative;
+  z-index: -1;
+}
+
+
+#gabi--1 picture{
+  --_rotate-direction: -4deg;
+}
+
+#gabi--1 .secao--img{
+  order: 2;
+}
+
+#gabi--2{
+  padding: 0;
+}
+
+#gabi--2 .container{
+  padding: 0;
+}
+
+#gabi--2 .secao--conteudo{
+  padding: 1rem;
+}
+
+#gabi--2 .secao--img{
+  padding: 0;
+}
+
+#gabi--2 .secao--img img{
+  object-fit: cover;
+  border-radius: 0;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 1080px) {
+  #gabi--1 .secao--img{
+    order: 0;
+  }
+  
+  .gab--2-grid.container{
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .gab--2-grid .secao--img{
+    grid-column: 2/ -1;
+  }
+  
+  .gab--2-grid .secao--conteudo{
+    margin-left: 200px;
+    margin-top: 80px;
+    max-width: calc(1080px / 2);
+  }
+
+  #gabi--2 .grid.container{
+    gap: 0;
+    padding: 0;
+  }
+
+  #gabi--2 .secao--img img{
+    height: 100%;
+  }
+}

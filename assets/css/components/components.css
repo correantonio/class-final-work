@@ -1,0 +1,16 @@
+@import url('./_flex.css');
+@import url('./_grid.css');
+@import url('./_menu.css');
+@import url('./_alunos.css');
+@import url('./_palavras-chave.css');
+@import url('./_lgpd.css');
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/*======  FLEX EDITS =======*/
+
+

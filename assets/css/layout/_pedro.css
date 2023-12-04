@@ -1,0 +1,23 @@
+#pedro--1 .bg-200{
+  background: linear-gradient(180deg, #F7F5FF 0%, #EAE5FF 100%);
+}
+
+#pedro--1 .bg-100{
+  border-bottom-left-radius: 32px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1080px) {
+  #pedro--1::after{
+    background: #EAE5FF;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 64px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 40px;
+    z-index: -4;
+  }
+}

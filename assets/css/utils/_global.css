@@ -1,0 +1,43 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--gray-100);
+    color: var(--gray-300);
+    font: 400 1rem/ 1.5rem var(--main-font), sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+ul{
+    list-style: none;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    margin: 0;
+    max-width: 100%;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    padding: 80px 0;
+    position: relative;
+}
+
+@media screen and (min-width: 1080px) {
+    article{
+        padding: 5rem;
+        position: relative;
+    }
+}
+  

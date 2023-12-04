@@ -1,0 +1,30 @@
+.menu{
+    background: var(--gray-50);
+    border-radius: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;
+    justify-content: center;
+    margin: 0 auto 48px auto;
+    max-width: fit-content;
+    padding: 8px;
+}
+
+.botao-menu{
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 1px solid var(--gray-50);
+    border-radius: 64px;
+}
+
+.botao-menu:hover{
+    background: var(--gray-100);
+    border-color: var(--gray-200);
+    color: var(--gray-400);
+}
+
+.botao-menu:active{
+    border-color: var(--primary-500);
+    color: var(--primary-500);
+}
+

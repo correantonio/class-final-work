@@ -1,0 +1,38 @@
+picture{
+  --_rotate-direction: 4deg;
+  position: relative;
+}
+
+source, img{
+  border-radius: 32px;
+}
+
+.img--before::before{
+  background: var(--primary-500);
+  border-radius: 32px;
+  content: "";
+  display: block;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  transform: rotate(var(--_rotate-direction));
+  width: 100%;
+  z-index: -1;
+}
+
+.layout-decorativo{
+  display: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .secao--conteudo,
+  .secao--img{
+    padding: 2rem;
+  }
+
+
+  .layout-decorativo{
+    display: grid;
+  }
+}
+

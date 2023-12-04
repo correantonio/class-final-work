@@ -1,0 +1,30 @@
+.beneficios{
+    gap: 1rem;
+    max-width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+}
+
+.beneficio{
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 0  353.33px;
+}   
+
+.beneficio-img{
+    margin-bottom: 2.5rem;
+}
+
+.beneficio h3{
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1080px) {
+    .beneficios{
+        overflow-x: initial;
+    }
+
+    .beneficio{
+        flex: 1;
+    }
+}

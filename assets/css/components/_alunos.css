@@ -1,0 +1,83 @@
+.lista-alunos{
+    display: flex;
+    margin: 0 auto;
+}
+
+.aluno-img{
+    border-radius: 50%;
+    border: 2px solid var(--gray-50);
+    width: 64px;
+    height: 64px;
+    position: relative;
+    transition: transform 250ms;
+    object-fit: cover;
+}
+
+.lista-alunos > :not(:first-child){
+    margin-left: -32px;
+}
+
+.lista-alunos .aluno-img:hover{
+    transform: translateY(-16px);
+    z-index: 1;
+}
+
+.aluno-nome{
+    transition: all 450ms ease-in-out;
+    order: 2;
+    animation: name-apear 650ms ease-in-out;
+}
+
+.aluno-nome--inactive{
+    display: none;
+}
+
+.alunos-container{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+/*====================*/
+
+.aluno-container{
+    margin-bottom: calc(5rem + 16px);
+}
+
+.aluno-info{
+    gap: 1rem;
+}
+
+.aluno-info-image{
+    position: relative;
+}
+
+.aluno-online{
+    background-color: #56F178;
+    border-radius: 50%;
+    border: 2px solid var(--gray-50);
+    bottom: 0;
+    display: inline-block;
+    height: 1rem;
+    position: absolute;
+    right: 0;
+    width: 1rem;
+}
+
+.aluno-tag{
+    background: var(--gray-50);
+    border-radius: 64px;
+    padding: 4px 12px;
+}
+
+
+@keyframes name-apear {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
