@@ -28,3 +28,58 @@
     color: var(--primary-500);
 }
 
+/* Tati */
+.menu-hamburguer{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-hamburguer {
+        background: #fff;
+        border-radius: 4px;
+        border: none;
+        color: var(--primary-500);
+        cursor: pointer;
+        display: block;
+        font-size: 2rem;
+        padding: 1rem;
+        position: fixed;
+        right: 2rem;
+        top: 3rem;
+        transition: all 350ms ease-in-out;
+        z-index: 97;
+        box-shadow: 0 8px 48px rgba(0, 0, 0, 0.05);
+    }
+    .menu-hamburguer::before {
+        content: '\2630'
+    }
+
+    .menu-hamburguer.menu-visivel::before {
+        content: '\000D7';
+    }
+    .menu{
+        display: none;
+    }
+    .menu.menu-visivel {
+        border-radius: 4px;
+        display: block;
+        left: 0;
+        max-width: 100%;
+        padding: 2rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 98;
+    }
+    .menu-hamburguer.menu-visivel{
+        border: 1px solid var(--primary-500);
+        color: var(--primary-700);
+        font-weight: bold;
+        height: 24px;
+        padding: 1rem;
+        right: 1rem;
+        text-align: center;
+        width: 24px;
+        z-index: 99;
+    }
+}
